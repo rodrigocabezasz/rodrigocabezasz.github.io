@@ -91,12 +91,14 @@ Mi rol se centró en la consolidación y preparación de reportes estratégicos 
 ## Formación y Certificaciones
 
 ### Educación Superior y Especializada
-*   **[Bootcamp en Ciencia de Datos e Inteligencia Artificial](https://github.com/rodrigocabezasz/mi-cv/blob/main/certificados/5_Bootcamp_Ciencia_de_Datos_e_Inteligencia_Artificial_UDD.pdf?raw=true)** (280 hrs) - *Universidad del Desarrollo* (2025)
+*   **[Bootcamp en Ciencia de Datos e Inteligencia Artificial](https://github.com/rodrigocabezasz/curriculum-vitae/raw/main/certificados/5%20Bootcamp%20Ciencia%20de%20Datos%20e%20Inteligencia%20Artificial%20UDD.pdf?raw=true)** (280 hrs) - *Universidad del Desarrollo* (2025)
 
-*   **[Diplomado en Modelamiento y Análisis de Datos](https://github.com/rodrigocabezasz/mi-cv/blob/main/certificados/4_Diplomado_Analisis_de_datos_Usach.pdf?raw=true)** (180 hrs) - *Universidad de Santiago de Chile* (2024)
-*   **Diplomado en Diseño y Desarrollo Web** (178 hrs) - *Duoc UC* (2018)
+*   **[Diplomado en Modelamiento y Análisis de Datos](https://github.com/rodrigocabezasz/mi-cv/blob/main/certificados/4%20Diplomado%20Analisis%20de%20datos%20Usach.pdf?raw=true)** (180 hrs) - *Universidad de Santiago de Chile* (2024)
+*   **[Diplomado en Diseño y Desarrollo Web](https://github.com/rodrigocabezasz/curriculum-vitae/raw/main/certificados/3%20Diplomado%20Diseño%20Web.pdf?raw=true)** (178 hrs) - *Duoc UC* (2018)
 *   **Ingeniero en Control de Gestión** (Titulado con Distinción) - *Universidad UCINF* (2014)  https://github.com/rodrigocabezasz/curriculum-vitae/commit/938617051dca80cd4ae623c1bd6ba4ea5b4b4614
 *   **Programador y Analista de Sistemas** - *Instituto Profesional AIEP* (2007)
+
+3 Diplomado Diseño Web.pdf
 
 ### Cursos y Certificaciones Clave
 *   **Power BI: Herramientas Básicas para el Análisis de Datos** - *Pontificia Universidad Católica de Chile* (2021)
