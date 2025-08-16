@@ -103,7 +103,7 @@ Mi rol se centró en la consolidación y preparación de reportes estratégicos 
 *   **[Ingeniero en Control de Gestión](https://github.com/rodrigocabezasz/curriculum-vitae/raw/main/certificados/1%20Certificado%20Ing%20Control%20de%20Gestion.pdf?raw=true)**(Titulado con Distinción) - *Universidad UCINF* (2014)  
 *   **Programador y Analista de Sistemas** - *Instituto Profesional AIEP* (2007)
 
-11 SENCE MACHINE LEARNING 20h
+
 
 ### Cursos y Certificaciones Clave
 *   **[Power BI: Herramientas Básicas para el Análisis de Datos](https://github.com/rodrigocabezasz/curriculum-vitae/raw/main/certificados/6%20Curso%20Power%20BI.pdf?raw=true)** - *Pontificia Universidad Católica de Chile* (2021)
