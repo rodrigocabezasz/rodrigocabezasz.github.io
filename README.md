@@ -1,26 +1,18 @@
+<div align="center">
 # Rodrigo Cabezas Zúñiga
 *Data Scientist & Ingeniero en Control de Gestión*
-
-<div align="center">
-Santiago, Chile | **+569 9020 2757** | rorocabezas@gmail.com | [LinkedIn](https://www.linkedin.com/in/rodrigo-cabezas-zu%C3%B1iga-698a8532) | [GitHub](https://github.com/rodrigocabezasz)
 </div>
+
+
 ---
 <div align="center">
 Santiago, Chile | +569 9020 2757 | 
-<a href="mailto:rorocabezas@gmail.com"><img src="https://img.shields.io/badge/-Gmail-D14836?style=flat-square&logo=Gmail&logoColor=white" alt="Gmail"></a> | 
+<a href="mailto:rorocabezas@gmail.com">rorocabezas@gmail.com | <img src="https://img.shields.io/badge/-Gmail-D14836?style=flat-square&logo=Gmail&logoColor=white" alt="Gmail"></a> | 
 <a href="https://www.linkedin.com/in/rodrigo-cabezas-zu%C3%B1iga-698a8532"><img src="https://img.shields.io/badge/-LinkedIn-0A66C2?style=flat-square&logo=LinkedIn&logoColor=white" alt="LinkedIn"></a> | 
 <a href="https://github.com/rodrigocabezasz"><img src="https://img.shields.io/badge/-GitHub-181717?style=flat-square&logo=GitHub&logoColor=white" alt="GitHub"></a>
 </div>
 
----
-<div align="center">
-Santiago, Chile | +569 9020 2757 | 
-<a href="mailto:rorocabezas@gmail.com"><img src="https://raw.githubusercontent.com/edent/SuperTinyIcons/master/images/svg/email.svg" alt="Email" width="20"></a> | 
-<a href="https://www.linkedin.com/in/rodrigo-cabezas-zu%C3%B1iga-698a8532"><img src="https://raw.githubusercontent.com/edent/SuperTinyIcons/master/images/svg/linkedin.svg" alt="LinkedIn" width="20"></a> | 
-<a href="https://github.com/rodrigocabezasz"><img src="https://raw.githubusercontent.com/edent/SuperTinyIcons/master/images/svg/github.svg" alt="GitHub" width="20"></a>
-</div>
 
----
 
 ## Resumen Profesional
 
