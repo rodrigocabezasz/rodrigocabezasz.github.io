@@ -2,7 +2,22 @@
 *Data Scientist & Ingeniero en Control de Gestión*
 
 <div align="center">
-Santiago, Chile | +569 9020 2757 | rorocabezas@gmail.com | [LinkedIn](https://www.linkedin.com/in/rodrigo-cabezas-zu%C3%B1iga-698a8532) | [GitHub](https://github.com/rodrigocabezasz)
+Santiago, Chile | **+569 9020 2757** | rorocabezas@gmail.com | [LinkedIn](https://www.linkedin.com/in/rodrigo-cabezas-zu%C3%B1iga-698a8532) | [GitHub](https://github.com/rodrigocabezasz)
+</div>
+---
+<div align="center">
+Santiago, Chile | +569 9020 2757 | 
+<a href="mailto:rorocabezas@gmail.com"><img src="https://img.shields.io/badge/-Gmail-D14836?style=flat-square&logo=Gmail&logoColor=white" alt="Gmail"></a> | 
+<a href="https://www.linkedin.com/in/rodrigo-cabezas-zu%C3%B1iga-698a8532"><img src="https://img.shields.io/badge/-LinkedIn-0A66C2?style=flat-square&logo=LinkedIn&logoColor=white" alt="LinkedIn"></a> | 
+<a href="https://github.com/rodrigocabezasz"><img src="https://img.shields.io/badge/-GitHub-181717?style=flat-square&logo=GitHub&logoColor=white" alt="GitHub"></a>
+</div>
+
+---
+<div align="center">
+Santiago, Chile | +569 9020 2757 | 
+<a href="mailto:rorocabezas@gmail.com"><img src="https://raw.githubusercontent.com/edent/SuperTinyIcons/master/images/svg/email.svg" alt="Email" width="20"></a> | 
+<a href="https://www.linkedin.com/in/rodrigo-cabezas-zu%C3%B1iga-698a8532"><img src="https://raw.githubusercontent.com/edent/SuperTinyIcons/master/images/svg/linkedin.svg" alt="LinkedIn" width="20"></a> | 
+<a href="https://github.com/rodrigocabezasz"><img src="https://raw.githubusercontent.com/edent/SuperTinyIcons/master/images/svg/github.svg" alt="GitHub" width="20"></a>
 </div>
 
 ---
@@ -95,15 +110,15 @@ Mi rol se centró en la consolidación y preparación de reportes estratégicos 
 
 *   **[Diplomado en Modelamiento y Análisis de Datos](https://github.com/rodrigocabezasz/mi-cv/blob/main/certificados/4%20Diplomado%20Analisis%20de%20datos%20Usach.pdf?raw=true)** (180 hrs) - *Universidad de Santiago de Chile* (2024)
 *   **[Diplomado en Diseño y Desarrollo Web](https://github.com/rodrigocabezasz/curriculum-vitae/raw/main/certificados/3%20Diplomado%20Diseño%20Web.pdf?raw=true)** (178 hrs) - *Duoc UC* (2018)
-*   **Ingeniero en Control de Gestión** (Titulado con Distinción) - *Universidad UCINF* (2014)  https://github.com/rodrigocabezasz/curriculum-vitae/commit/938617051dca80cd4ae623c1bd6ba4ea5b4b4614
+*   **[Ingeniero en Control de Gestión](https://github.com/rodrigocabezasz/curriculum-vitae/raw/main/certificados/1%20Certificado%20Ing%20Control%20de%20Gestion.pdf?raw=true)**(Titulado con Distinción) - *Universidad UCINF* (2014)  
 *   **Programador y Analista de Sistemas** - *Instituto Profesional AIEP* (2007)
 
-3 Diplomado Diseño Web.pdf
+11 SENCE MACHINE LEARNING 20h
 
 ### Cursos y Certificaciones Clave
-*   **Power BI: Herramientas Básicas para el Análisis de Datos** - *Pontificia Universidad Católica de Chile* (2021)
-*   **Python 3 (Niveles Inicial, Intermedio y Avanzado)** - *Universidad Tecnológica Nacional (UTN.BA)* (2019-2020)
-*   **Introducción al Machine Learning** - *SENCE / Telefónica* (2018)
+*   **[Power BI: Herramientas Básicas para el Análisis de Datos](https://github.com/rodrigocabezasz/curriculum-vitae/raw/main/certificados/6%20Curso%20Power%20BI.pdf?raw=true)** - *Pontificia Universidad Católica de Chile* (2021)
+*   **[Python 3 (Niveles Inicial, Intermedio y Avanzado)](https://github.com/rodrigocabezasz/curriculum-vitae/raw/main/certificados/15%20Certificado%20Python%203.pdf?raw=true)** - *Universidad Tecnológica Nacional (UTN.BA)* (2019-2020)
+*   **[Introducción al Machine Learning](https://github.com/rodrigocabezasz/curriculum-vitae/raw/main/certificados/11%2011%20SENCE%20MACHINE%20LEARNING%2020h.pdf?raw=true)** - *SENCE / Telefónica* (2018)
 *   **Microsoft SQL Server: Analysis & Reporting Services** - *New Horizons* (2010)
 
 ---
