@@ -116,9 +116,12 @@ Mi rol se centró en la consolidación y preparación de reportes estratégicos 
 
 ## Habilidades Técnicas
 
-*   **Ciencia de Datos y Desarrollo de Software:** Python, FastAPI, Streamlit, Scikit-learn, Pandas, NumPy, | Modelamiento Predictivo, Análisis Exploratorio (EDA), Ingeniería de Características | Git/GitHub, Firebase (Auth, Firestore).
-*   **Business Intelligence y Dashboards:** Power BI, Excel Avanzado (Power Pivot, Power Query), SAP (BW, BO), Jedox, Pentaho.
-*   **Bases de Datos y SQL:** MySQL, SQL Server, SQLite | Consultas Complejas, Modelamiento, Data Warehouse, ETL.
-*   **Programación en Python y Desarrollo de APIs:** FastAPI, Streamlit, Requests.
-*   **Control de Gestión y Planificación:** Planificación Estratégica, Control Presupuestario, Balanced Scorecard (BSC), BPM | ERPs (SAP, Softland).
+*   **Ciencia de Datos y Desarrollo de Software:** Python, FastAPI, Streamlit, Scikit-learn, Pandas, NumPy, Git/GitHub, Firebase (Auth, Firestore), Modelamiento Predictivo, Análisis Exploratorio (EDA).
+
+*   **Business Intelligence y Dashboards:** Power BI, Excel Avanzado (Power Pivot, Power Query), SAP (BW, BO), Diseño de KPIs, Reporting Ejecutivo.
+
+*   **Bases de Datos y SQL:** MySQL, SQL Server, SQLite, Consultas Complejas, Modelamiento de Datos, Data Warehouse, ETL.
+
+*   **Control de Gestión y Planificación:** Planificación Estratégica, Control Presupuestario, Balanced Scorecard (BSC), BPM, ERPs (SAP, Softland).
+
 *   **Desarrollo Web (Frontend):** HTML5, CSS3, JavaScript.
