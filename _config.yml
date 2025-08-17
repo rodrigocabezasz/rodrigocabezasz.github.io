@@ -1,40 +1,37 @@
-# Archivo de configuración para Jekyll - Tema "Clean Blog"
+# Archivo de configuración para Jekyll - MÉTODO DE SOBRESCRITURA DE TEMA
 
 # --- Configuración del Sitio ---
-title: "Rodrigo Cabezas Zúñiga" # El tema lo usa para el header principal y la pestaña del navegador
-description: "Ingeniero en Control de Gestión & Data Scientist" # Este será tu subtítulo
+title: "Rodrigo Cabezas Zúñiga"
+description: "Ingeniero en Control de Gestión & Data Scientist"
 baseurl: ""
 url: "https://rodrigocabezasz.github.io"
 
-# --- Configuración del Tema "Clean Blog" ---
-# Esto le dice a GitHub qué tema usar
-
-# Opciones del tema
+# --- Opciones del Tema (que nuestro tema local usará) ---
 author: "Rodrigo Cabezas Zúñiga"
 copyright_name: "Rodrigo Cabezas Zúñiga"
 email: "rorocabezas@gmail.com"
-locale: "es-ES" # Para que algunas fechas salgan en español
+locale: "es-ES"
 
 # Enlaces de la Barra de Navegación (Header)
 navbar-links:
   Mi CV: "/"
-  Blog: "/blog" # Crearemos esta página a continuación
+  Blog: "/blog"
   GitHub: "https://github.com/rodrigocabezasz"
   LinkedIn: "https://www.linkedin.com/in/rodrigo-cabezas-zuñiga-698a8532"
+  
+# --- LE DECIMOS A GITHUB PAGES QUÉ TEMA USAR (SU TEMA POR DEFECTO) ---
+# PERO LO SOBRESCRIBIREMOS CON NUESTROS ARCHIVOS LOCALES
+theme: jekyll-theme-primer
 
 # --- Plugins ---
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
-  - jekyll-paginate # Necesario para el blog
-
+  - jekyll-paginate
+  
 # --- Paginación del Blog ---
-paginate: 5 # Número de posts por página
+paginate: 5
 paginate_path: "/blog/page:num/"
 
-# --- Configuración de SASS ---
-# Le decimos a Jekyll que busque los archivos de estilo
-# en la carpeta _sass de nuestro repositorio.
-sass:
-  load_paths:
-    - _sass
+# --- NO NECESITAMOS LA SECCIÓN DE SASS ---
+# Jekyll la manejará automáticamente al encontrar la carpeta _sass
