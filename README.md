@@ -97,7 +97,6 @@ Mi rol se centró en la consolidación y preparación de reportes estratégicos 
 
 ### Educación Superior y Especializada
 *   **[Bootcamp en Ciencia de Datos e Inteligencia Artificial](https://github.com/rodrigocabezasz/curriculum-vitae/raw/main/certificados/5%20Bootcamp%20Ciencia%20de%20Datos%20e%20Inteligencia%20Artificial%20UDD.pdf?raw=true)** (280 hrs) - *Universidad del Desarrollo* (2025)
-
 *   **[Diplomado en Modelamiento y Análisis de Datos](https://github.com/rodrigocabezasz/mi-cv/blob/main/certificados/4%20Diplomado%20Analisis%20de%20datos%20Usach.pdf?raw=true)** (180 hrs) - *Universidad de Santiago de Chile* (2024)
 *   **[Diplomado en Diseño y Desarrollo Web](https://github.com/rodrigocabezasz/curriculum-vitae/raw/main/certificados/3%20Diplomado%20Diseño%20Web.pdf?raw=true)** (178 hrs) - *Duoc UC* (2018)
 *   **[Ingeniero en Control de Gestión](https://github.com/rodrigocabezasz/curriculum-vitae/raw/main/certificados/1%20Certificado%20Ing%20Control%20de%20Gestion.pdf?raw=true)**(Titulado con Distinción) - *Universidad UCINF* (2014)  
