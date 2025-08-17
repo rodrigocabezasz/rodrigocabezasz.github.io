@@ -8,7 +8,7 @@ url: "https://rodrigocabezasz.github.io"
 
 # --- Configuración del Tema "Clean Blog" ---
 # Esto le dice a GitHub qué tema usar
-remote_theme: "StartBootstrap/jekyll-theme-clean-blog"
+remote_theme: "dafiulh/jekyll-theme-clean-blog"
 
 # Opciones del tema
 author: "Rodrigo Cabezas Zúñiga"
