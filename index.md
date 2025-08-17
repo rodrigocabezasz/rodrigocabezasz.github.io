@@ -1,23 +1,21 @@
 ---
-layout: default
+layout: home
 ---
 
 
-#### *Data Scientist & Ingeniero en Control de Gestión*
 
+# Rodrigo Cabezas Zúñiga
+*Data Scientist & Ingeniero en Control de Gestión*
 
-<div align="center">
-Santiago, Chile | +569 9020 2757 | rorocabezas@gmail.com 
-<br>
-<a href="mailto:rorocabezas@gmail.com"> <img src="https://img.shields.io/badge/-Gmail-D14836?style=flat-square&logo=Gmail&logoColor=white" alt="Gmail"></a> | 
-<a href="https://www.linkedin.com/in/rodrigo-cabezas-zu%C3%B1iga-698a8532"><img src="https://img.shields.io/badge/-LinkedIn-0A66C2?style=flat-square&logo=LinkedIn&logoColor=white" alt="LinkedIn"></a> | 
-<a href="https://github.com/rodrigocabezasz"><img src="https://img.shields.io/badge/-GitHub-181717?style=flat-square&logo=GitHub&logoColor=white" alt="GitHub"></a>
-</div>
+Santiago, Chile | +569 9020 2757 | rorocabezas@gmail.com  
+[Gmail](mailto:rorocabezas@gmail.com) | [LinkedIn](https://www.linkedin.com/in/rodrigo-cabezas-zu%C3%B1iga-698a8532) | [GitHub](https://github.com/rodrigocabezasz)
+
 
 
 ## Resumen Profesional
 
 Ingeniero en Control de Gestión con más de 15 años de experiencia liderando la planificación estratégica y la optimización de procesos. Mi enfoque se centra en potenciar la toma de decisiones a través del análisis avanzado de datos, utilizando herramientas como **Power BI, SQL y Python**. Actualmente complemento mi rol gerencial aplicando activamente habilidades de **Ciencia de Datos y desarrollo de software (FastAPI, Streamlit)** en proyectos de alto impacto, transformando datos crudos en insights de negocio accionables.
+
 
 
 ## Experiencia Profesional
