@@ -1,7 +1,13 @@
-# Rodrigo Cabezas Zúñiga
-*Data Scientist & Ingeniero en Control de Gestión*
+---
+title: "CV"
+layout: home
+permalink: /
+---
 
 ![Mi foto de perfil](/assets/img/perfil.jpg){: .profile-img }
+
+# Rodrigo Cabezas Zúñiga
+*Data Scientist & Ingeniero en Control de Gestión*
 
 Santiago, Chile | +569 9020 2757 | rorocabezas@gmail.com  
 [Gmail](mailto:rorocabezas@gmail.com) | [LinkedIn](https://www.linkedin.com/in/rodrigo-cabezas-zu%C3%B1iga-698a8532) | [GitHub](https://github.com/rodrigocabezasz)
