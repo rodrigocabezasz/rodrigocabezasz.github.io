@@ -19,9 +19,7 @@ navbar-links:
   GitHub: "https://github.com/rodrigocabezasz"
   LinkedIn: "https://www.linkedin.com/in/rodrigo-cabezas-zuñiga-698a8532"
   
-# --- LE DECIMOS A GITHUB PAGES QUÉ TEMA USAR (SU TEMA POR DEFECTO) ---
-# PERO LO SOBRESCRIBIREMOS CON NUESTROS ARCHIVOS LOCALES
-theme: jekyll-theme-primer
+
 
 # --- Plugins ---
 plugins:
@@ -33,5 +31,3 @@ plugins:
 paginate: 5
 paginate_path: "/blog/page:num/"
 
-# --- NO NECESITAMOS LA SECCIÓN DE SASS ---
-# Jekyll la manejará automáticamente al encontrar la carpeta _sass

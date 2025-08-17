@@ -1,9 +1,6 @@
----
----
+ ---
+ ---
 
-// Importaciones para el tema Clean Blog (local)
-// Usaremos las rutas relativas a la carpeta _sass que ya tienes en tu proyecto.
-
-@import "base";
-@import "layout";
-@import "syntax-highlighting";
+ // Importa el archivo de estilos principal del tema Clean Blog.
+ // La ruta es relativa a la carpeta raíz del proyecto.
+ @import "../_sass/styles.scss";
