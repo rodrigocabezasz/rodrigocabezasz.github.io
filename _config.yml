@@ -1,29 +1,22 @@
-# Personalización minima
-minima:
-  skin: dark
-  social_links:
-    - { platform: github,  user_url: "https://github.com/rodrigocabezasz" }
-    - { platform: linkedin, user_url: "https://www.linkedin.com/in/rodrigo-cabezas-zu%C3%B1iga-698a8532" }
-# Archivo de configuración para Jekyll - MÉTODO DE SOBRESCRITURA DE TEMA
 
-# --- Configuración del Sitio ---
-
+# Configuración del sitio para Clean Blog
 title: "Rodrigo Cabezas Zúñiga"
 description: "Ingeniero en Control de Gestión & Data Scientist"
 baseurl: ""
 url: "https://rodrigocabezasz.github.io"
 
-# Theme minima
-theme: minima
-
-# Plugins recomendados para minima
+# Plugins recomendados
 plugins:
   - jekyll-feed
 
-# Configuración básica
 author: "Rodrigo Cabezas Zúñiga"
 email: "rorocabezas@gmail.com"
-
-# Idioma
 locale: "es-ES"
+
+# Navegación principal
+navbar-links:
+  CV: "/"
+  Blog: "/blog"
+  GitHub: "https://github.com/rodrigocabezasz"
+  LinkedIn: "https://www.linkedin.com/in/rodrigo-cabezas-zuñiga-698a8532"
 

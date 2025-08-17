@@ -1,6 +1,6 @@
 ---
 title: "CV"
-layout: home
+layout: page
 permalink: /
 ---
 
