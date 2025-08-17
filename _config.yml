@@ -1,4 +1,28 @@
-# Archivo de configuración para Jekyll (el motor de GitHub Pages)
+# --- Configuración del Sitio ---
 title: Rodrigo Cabezas Zúñiga
-description: Portafolio y Currículum Profesional
-theme: jekyll-theme-minimal
+description: >- # La descripción aparece en los metadatos del sitio (bueno para SEO)
+  Portafolio y blog personal de un Ingeniero en Control de Gestión y Data Scientist. 
+  Explorando Python, Power BI, FastAPI, Streamlit y el mundo de los datos.
+baseurl: "" # No tocar, dejar vacío
+url: "https://rodrigocabezasz.github.io" # Tu URL base
+
+# --- Configuración del Autor ---
+author:
+  name: Rodrigo Cabezas Zúñiga
+  email: rorocabezas@gmail.com
+
+# --- Enlaces Sociales (aparecerán en el pie de página del tema) ---
+github_username:  rodrigocabezasz
+linkedin_username: rodrigo-cabezas-zuñiga-698a8532
+
+# --- Configuración del Tema ---
+# Usaremos el tema 'minima', que es el estándar de Jekyll, limpio y responsivo.
+theme: minima
+
+# --- Plugins (por defecto) ---
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# --- Colecciones (para separar CV del blog) ---
+# Esto es opcional por ahora, lo dejaremos simple.
