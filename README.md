@@ -16,7 +16,6 @@ Santiago, Chile | +569 9020 2757 | rorocabezas@gmail.com
 
 Ingeniero en Control de Gestión con más de 15 años de experiencia liderando la planificación estratégica y la optimización de procesos. Mi enfoque se centra en potenciar la toma de decisiones a través del análisis avanzado de datos, utilizando herramientas como **Power BI, SQL y Python**. Actualmente complemento mi rol gerencial aplicando activamente habilidades de **Ciencia de Datos y desarrollo de software (FastAPI, Streamlit)** en proyectos de alto impacto, transformando datos crudos en insights de negocio accionables.
 
----
 
 ## Experiencia Profesional
 
