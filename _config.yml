@@ -31,3 +31,10 @@ plugins:
 # --- Paginación del Blog ---
 paginate: 5 # Número de posts por página
 paginate_path: "/blog/page:num/"
+
+# --- Configuración de SASS ---
+# Le decimos a Jekyll que busque los archivos de estilo
+# en la carpeta _sass de nuestro repositorio.
+sass:
+  load_paths:
+    - _sass
