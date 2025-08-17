@@ -1,28 +1,34 @@
+# Archivo de configuración para Jekyll - Tema "Clean Blog"
+
 # --- Configuración del Sitio ---
-title: Portafolio Personal
-description: >- # La descripción aparece en los metadatos del sitio (bueno para SEO)
-  Portafolio y blog personal de un Ingeniero en Control de Gestión y Data Scientist. 
-  Explorando Python, Power BI, FastAPI, Streamlit y el mundo de los datos.
-baseurl: "" # No tocar, dejar vacío
-url: "https://rodrigocabezasz.github.io" # Tu URL base
+title: "Rodrigo Cabezas Zúñiga" # El tema lo usa para el header principal y la pestaña del navegador
+description: "Ingeniero en Control de Gestión & Data Scientist" # Este será tu subtítulo
+baseurl: ""
+url: "https://rodrigocabezasz.github.io"
 
-# --- Configuración del Autor ---
-author:
-  name: Rodrigo Cabezas Zúñiga
-  email: rorocabezas@gmail.com
+# --- Configuración del Tema "Clean Blog" ---
+# Esto le dice a GitHub qué tema usar
+remote_theme: "StartBootstrap/jekyll-theme-clean-blog"
 
-# --- Enlaces Sociales (aparecerán en el pie de página del tema) ---
-github_username:  rodrigocabezasz
-linkedin_username: rodrigo-cabezas-zuñiga-698a8532
+# Opciones del tema
+author: "Rodrigo Cabezas Zúñiga"
+copyright_name: "Rodrigo Cabezas Zúñiga"
+email: "rorocabezas@gmail.com"
+locale: "es-ES" # Para que algunas fechas salgan en español
 
-# --- Configuración del Tema ---
-# Usaremos el tema 'minima', que es el estándar de Jekyll, limpio y responsivo.
-theme: minima
+# Enlaces de la Barra de Navegación (Header)
+navbar-links:
+  Mi CV: "/"
+  Blog: "/blog" # Crearemos esta página a continuación
+  GitHub: "https://github.com/rodrigocabezasz"
+  LinkedIn: "https://www.linkedin.com/in/rodrigo-cabezas-zuñiga-698a8532"
 
-# --- Plugins (por defecto) ---
+# --- Plugins ---
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-paginate # Necesario para el blog
 
-# --- Colecciones (para separar CV del blog) ---
-# Esto es opcional por ahora, lo dejaremos simple.
+# --- Paginación del Blog ---
+paginate: 5 # Número de posts por página
+paginate_path: "/blog/page:num/"
