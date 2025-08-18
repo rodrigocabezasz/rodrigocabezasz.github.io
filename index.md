@@ -3,7 +3,7 @@ layout: page
 permalink: /
 ---
 
-![Mi foto de perfil](/assets/img/perfil.jpg)
+<img src="/assets/img/perfil.jpg" alt="Mi foto de perfil" class="profile-img" />
 
 # Rodrigo Cabezas Zúñiga
 *Data Scientist & Ingeniero en Control de Gestión*
