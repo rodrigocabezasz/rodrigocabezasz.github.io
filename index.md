@@ -1,13 +1,13 @@
-title: "CV"
+---
 layout: page
+title: "Currículum Vitae" # Este título es para el header de la página, no para el contenido
 permalink: /
 ---
 
 <img src="/assets/img/perfil.jpg" alt="Mi foto de perfil" class="profile-img" />
 
-# Rodrigo Cabezas Zúñiga
-*Data Scientist & Ingeniero en Control de Gestión*
 
+<div align="center">
 Santiago, Chile | +569 9020 2757 | rorocabezas@gmail.com  
 [Gmail](mailto:rorocabezas@gmail.com) | [LinkedIn](https://www.linkedin.com/in/rodrigo-cabezas-zu%C3%B1iga-698a8532) | [GitHub](https://github.com/rodrigocabezasz)
 
