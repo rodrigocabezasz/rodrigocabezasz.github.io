@@ -1,3 +1,20 @@
+.post-content, .page-content, .home-content {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 32px;
+  padding-right: 32px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+}
+
+/* Asegurar que el footer moderno se muestre correctamente */
+.modern-footer {
+  width: 100%;
+  box-shadow: 0 -1px 8px rgba(0,0,0,0.03);
+  font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+}
 /* Estilos personalizados para la foto de perfil y colores */
 
 .profile-img {
