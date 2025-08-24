@@ -1,85 +1,147 @@
+
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="../theme/css/elegant.prod.9e9d5ce754.css" media="screen">
-        <link rel="stylesheet" type="text/css" href="../theme/css/custom.css" media="screen">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="" />
 
-        <link rel="dns-prefetch" href="//fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,700;1,400&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
 
-        <meta name="author" content="Rodrigo Cabezas Zúñiga" />
+    <link rel="stylesheet" type="text/css" href="../theme/stylesheet/style.min.css">
 
-        <meta property="og:type" content="article" />
-        <meta name="twitter:card" content="summary">
 
-<meta name="keywords" content="fastapi, streamlit, frontend, api, framework-de-gestion, " />
-
-<meta property="og:title" content="Framework de Gestión (Parte 4), Conectando Streamlit y FastAPI "/>
-<meta property="og:url" content="../blog/framework-gestion-parte-4-conectando-streamlit-y-fastapi.html" />
-<meta property="og:description" content="Dando vida a la interfaz: cómo crear formularios en Streamlit para consumir una API REST y gestionar datos en tiempo real. En los posts anteriores, construimos un backend robusto con FastAPI, sentando las bases para la autenticación y la gestión de datos. Pero una API, por potente que sea, no es nada sin una interfaz que permita a los usuarios …" />
-<meta property="og:site_name" content="Portafolio de Rodrigo Cabezas Zúñiga" />
-<meta property="og:article:author" content="Rodrigo Cabezas Zúñiga" />
-<meta property="og:article:published_time" content="2024-08-21T20:00:00-04:00" />
-<meta name="twitter:title" content="Framework de Gestión (Parte 4), Conectando Streamlit y FastAPI ">
-<meta name="twitter:description" content="Dando vida a la interfaz: cómo crear formularios en Streamlit para consumir una API REST y gestionar datos en tiempo real. En los posts anteriores, construimos un backend robusto con FastAPI, sentando las bases para la autenticación y la gestión de datos. Pero una API, por potente que sea, no es nada sin una interfaz que permita a los usuarios …">
-
-        <title>Framework de Gestión (Parte 4), Conectando Streamlit y FastAPI  · Portafolio de Rodrigo Cabezas Zúñiga
-</title>
+    <link id="pygments-light-theme" rel="stylesheet" type="text/css"
+          href="../theme/pygments/github.min.css">
 
 
 
-    </head>
-    <body>
-        <div id="content">
-            <div class="navbar navbar-static-top">
-                <div class="navbar-inner">
-                    <div class="container-fluid">
-                        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </a>
-                        <a class="brand" href="../"><span class=site-name>Portafolio de Rodrigo Cabezas Zúñiga</span></a>
-                        <div class="nav-collapse collapse">
-                            <ul class="nav pull-right top-menu">
-                                <li >
-                                    <a href=
-                                       ..
-                                    >Home</a>
-                                </li>
-                                <li ><a href="../pages/contacto.html">Contacto</a></li>
-                                <li ><a href="../pages/cv.html">Mi CV</a></li>
-                                <li ><a href="../categories.html">Categories</a></li>
-                                <li ><a href="../tags.html">Tags</a></li>
-                                <li ><a href="../archives.html">Archives</a></li>
-                                <li><form class="navbar-search" action="../search.html" onsubmit="return validateForm(this.elements['q'].value);"> <input type="text" class="search-query" placeholder="Search" name="q" id="tipue_search_input"></form></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="container-fluid">
-                <div class="row-fluid">
-                    <div class="span1"></div>
-                    <div class="span10">
-<article itemscope>
-<div class="row-fluid">
-    <header class="page-header span10 offset2">
-        <h1>
-            <a href="../blog/framework-gestion-parte-4-conectando-streamlit-y-fastapi.html">
-                Framework de Gestión (Parte 4), Conectando Streamlit y FastAPI
-            </a>
-        </h1>
-    </header>
-</div>
+  <link rel="stylesheet" type="text/css" href="../theme/font-awesome/css/fontawesome.css">
+  <link rel="stylesheet" type="text/css" href="../theme/font-awesome/css/brands.css">
+  <link rel="stylesheet" type="text/css" href="../theme/font-awesome/css/solid.css">
 
-<div class="row-fluid">
-        <div class="span8 offset2 article-content">
-            
-            <p><img alt="Frontend" src="../images/framework-frontend.jpg"></p>
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+<meta name="author" content="Rodrigo Cabezas Zúñiga" />
+<meta name="description" content="Dando vida a la interfaz: cómo crear formularios en Streamlit para consumir una API REST y gestionar datos en tiempo real. En los posts anteriores, construimos un backend robusto con FastAPI, sentando las bases para la autenticación y la gestión de datos. Pero una API, por potente que sea, no es nada sin una interfaz que permita a los usuarios …" />
+<meta name="keywords" content="fastapi, streamlit, frontend, api">
+
+
+  <meta property="og:site_name" content="Portafolio de Rodrigo Cabezas Zúñiga"/>
+  <meta property="og:title" content="Framework de Gestión (Parte 4), Conectando Streamlit y FastAPI"/>
+  <meta property="og:description" content="Dando vida a la interfaz: cómo crear formularios en Streamlit para consumir una API REST y gestionar datos en tiempo real. En los posts anteriores, construimos un backend robusto con FastAPI, sentando las bases para la autenticación y la gestión de datos. Pero una API, por potente que sea, no es nada sin una interfaz que permita a los usuarios …"/>
+  <meta property="og:locale" content="en_US"/>
+  <meta property="og:url" content="../blog/framework-gestion-parte-4-conectando-streamlit-y-fastapi.html"/>
+  <meta property="og:type" content="article"/>
+  <meta property="article:published_time" content="2024-08-21 20:00:00-04:00"/>
+  <meta property="article:modified_time" content=""/>
+  <meta property="article:author" content="../author/rodrigo-cabezas-zuniga.html">
+  <meta property="article:section" content="framework-de-gestion"/>
+  <meta property="article:tag" content="fastapi"/>
+  <meta property="article:tag" content="streamlit"/>
+  <meta property="article:tag" content="frontend"/>
+  <meta property="article:tag" content="api"/>
+  <meta property="og:image" content="">
+
+  <title>Portafolio de Rodrigo Cabezas Zúñiga &ndash; Framework de Gestión (Parte 4), Conectando Streamlit y FastAPI</title>
+
+
+</head>
+<body class="light-theme">
+
+<aside>
+  <div>
+    <a href="../">
+      <img src="../theme/img/profile.png" alt="" title="">
+    </a>
+
+    <h1>
+      <a href="../"></a>
+    </h1>
+
+    <p>Ingeniero en Control de Gestión & Data Scientist</p>
+
+
+    <nav>
+      <ul class="list">
+
+
+            <li>
+              <a target="_self"
+                 href="../pages/contacto.html#contacto">
+                Contacto
+              </a>
+            </li>
+            <li>
+              <a target="_self"
+                 href="../pages/cv.html#cv">
+                Mi CV
+              </a>
+            </li>
+
+          <li>
+            <a target="_self" href="https://getpelican.com/" >Pelican</a>
+          </li>
+          <li>
+            <a target="_self" href="https://www.python.org/" >Python.org</a>
+          </li>
+          <li>
+            <a target="_self" href="https://palletsprojects.com/p/jinja/" >Jinja2</a>
+          </li>
+          <li>
+            <a target="_self" href="#" >You can modify those links in your config file</a>
+          </li>
+      </ul>
+    </nav>
+
+    <ul class="social">
+      <li>
+        <a class="sc-You can add links in your config file"
+           href="#"
+           target="_blank">
+          <i class="fa-brands fa-You can add links in your config file"></i>
+        </a>
+      </li>
+      <li>
+        <a class="sc-Another social link"
+           href="#"
+           target="_blank">
+          <i class="fa-brands fa-Another social link"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+</aside>
+  <main>
+
+
+<article class="single">
+  <header>
+      
+    <h1 id="framework-gestion-parte-4-conectando-streamlit-y-fastapi">Framework de Gestión (Parte 4), Conectando Streamlit y FastAPI</h1>
+    <p>
+      Posted on mié. 21 agosto 2024 in <a href="../category/framework-de-gestion.html">framework-de-gestion</a>
+
+    </p>
+  </header>
+
+
+  <div>
+    <p><img alt="Frontend" src="../images/framework-frontend.jpg"></p>
 <p>Dando vida a la interfaz: cómo crear formularios en Streamlit para consumir una API REST y gestionar datos en tiempo real.</p>
 <p>En los posts anteriores, construimos un backend robusto con FastAPI, sentando las bases para la autenticación y la gestión de datos. Pero una API, por potente que sea, no es nada sin una interfaz que permita a los usuarios interactuar con ella. En esta cuarta parte de la serie, finalmente cruzamos el puente y conectamos nuestro frontend de <strong>Streamlit</strong> con el backend.</p>
 <p>El objetivo de este hito fue implementar la funcionalidad para que un administrador pueda configurar los datos de su empresa y empezar a gestionar sus "Datos Maestros" directamente desde la aplicación web.</p>
@@ -136,177 +198,39 @@
 <h3>Próximos Pasos</h3>
 <p>Con esta integración funcional, el framework ya se siente como una aplicación real. Los usuarios pueden configurar y empezar a poblar el sistema con sus datos.</p>
 <p>Los siguientes pasos se centrarán en refinar la experiencia de usuario con mejores validaciones, implementar la gestión de usuarios y roles en el frontend, y finalmente, empezar a construir los dashboards de visualización que consumirán todos estos datos. ¡Cada vez estamos más cerca del objetivo final!</p>
-
-
-             
- 
-            
-            
-            
-
-
-
-
-
-
-
-            <hr/>
-        </div>
-        <section id="article-sidebar" class="span2">
-            <h4>Published</h4>
-            <time itemprop="dateCreated" datetime="2024-08-21T20:00:00-04:00">mié. 21 agosto 2024</time>
-            <h4>Category</h4>
-            <a class="category-link" href="../categories.html#framework-de-gestion-ref">framework-de-gestion</a>
-            <h4>Tags</h4>
-            <ul class="list-of-tags tags-in-article">
-                <li><a href="../tags.html#api-ref">api
-                    <span class="superscript">1</span>
-</a></li>
-                <li><a href="../tags.html#fastapi-ref">fastapi
-                    <span class="superscript">5</span>
-</a></li>
-                <li><a href="../tags.html#frontend-ref">frontend
-                    <span class="superscript">1</span>
-</a></li>
-                <li><a href="../tags.html#streamlit-ref">streamlit
-                    <span class="superscript">2</span>
-</a></li>
-            </ul>
-<h4>Contact</h4>
-<div id="sidebar-social-link">
-</div>
-            
+  </div>
+  <div class="tag-cloud">
+    <p>
+      <a href="../tag/fastapi.html">fastapi</a>
+      <a href="../tag/streamlit.html">streamlit</a>
+      <a href="../tag/frontend.html">frontend</a>
+      <a href="../tag/api.html">api</a>
+    </p>
+  </div>
 
 
 
 
 
-            
 
 
-
-
-
-        </section>
-</div>
 </article>
-<!-- Root element of PhotoSwipe. Must have class pswp. -->
-<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
 
-    <!-- Background of PhotoSwipe.
-         It's a separate element as animating opacity is faster than rgba(). -->
-    <div class="pswp__bg"></div>
-
-    <!-- Slides wrapper with overflow:hidden. -->
-    <div class="pswp__scroll-wrap">
-
-        <!-- Container that holds slides.
-            PhotoSwipe keeps only 3 of them in the DOM to save memory.
-            Don't modify these 3 pswp__item elements, data is added later on. -->
-        <div class="pswp__container">
-            <div class="pswp__item"></div>
-            <div class="pswp__item"></div>
-            <div class="pswp__item"></div>
-        </div>
-
-        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
-        <div class="pswp__ui pswp__ui--hidden">
-
-            <div class="pswp__top-bar">
-
-                <!--  Controls are self-explanatory. Order can be changed. -->
-
-                <div class="pswp__counter"></div>
-
-                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
-
-                <button class="pswp__button pswp__button--share" title="Share"></button>
-
-                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
-
-                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
-
-                <!-- Preloader demo https://codepen.io/dimsemenov/pen/yyBWoR -->
-                <!-- element will get class pswp__preloader--active when preloader is running -->
-                <div class="pswp__preloader">
-                    <div class="pswp__preloader__icn">
-                      <div class="pswp__preloader__cut">
-                        <div class="pswp__preloader__donut"></div>
-                      </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-                <div class="pswp__share-tooltip"></div>
-            </div>
-
-            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
-            </button>
-
-            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
-            </button>
-
-            <div class="pswp__caption">
-                <div class="pswp__caption__center"></div>
-            </div>
-
-        </div>
-
-    </div>
-
-</div>                    </div>
-                    <div class="span1"></div>
-                </div>
-            </div>
-        </div>
 <footer>
+<p>&copy;  </p>
+<p>
+Built with <a href="http://getpelican.com" target="_blank">Pelican</a> using <a href="http://bit.ly/flex-pelican" target="_blank">Flex</a> theme
+</p></footer>  </main>
 
-    <div>
-        <span class="site-name">Portafolio de Rodrigo Cabezas Zúñiga</span> - Ingeniero en Control de Gestión & Data Scientist
-    </div>
-
-
-
-    <div id="fpowered">
-        Powered by: <a href="http://getpelican.com/" title="Pelican Home Page" target="_blank" rel="nofollow noopener noreferrer">Pelican</a>
-        Theme: <a href="https://elegant.oncrashreboot.com/" title="Theme Elegant Home Page" target="_blank" rel="nofollow noopener noreferrer">Elegant</a>
-    </div>
-</footer>            <script src="//code.jquery.com/jquery.min.js"></script>
-        <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
-        <script src="../theme/js/elegant.prod.9e9d5ce754.js"></script>
-        <script>
-            function validateForm(query)
-            {
-                return (query.length > 0);
-            }
-        </script>
-
-    <script>
-    (function () {
-        if (window.location.hash.match(/^#comment-\d+$/)) {
-            $('#comment_thread').collapse('show');
-        }
-    })();
-    window.onhashchange=function(){
-        if (window.location.hash.match(/^#comment-\d+$/))
-            window.location.reload(true);
-    }
-    $('#comment_thread').on('shown', function () {
-        var link = document.getElementById('comment-accordion-toggle');
-        var old_innerHTML = link.innerHTML;
-        $(link).fadeOut(200, function() {
-            $(this).text('Click here to hide comments').fadeIn(200);
-        });
-        $('#comment_thread').on('hidden', function () {
-            $(link).fadeOut(200, function() {
-                $(this).text(old_innerHTML).fadeIn(200);
-            });
-        })
-    })
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Blog",
+  "name": " Portafolio de Rodrigo Cabezas Zúñiga ",
+  "url" : "..",
+  "image": "",
+  "description": ""
+}
 </script>
-
-    </body>
-    <!-- Theme: Elegant built for Pelican
-        License : MIT -->
+</body>
 </html>
