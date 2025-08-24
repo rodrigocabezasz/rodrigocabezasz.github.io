@@ -15,6 +15,7 @@ locale: "es-ES"
 navbar-links:
   CV: "/"
   Blog: "/blog"
+  Categorías: "/categories"
   Contacto: "/contact" 
   GitHub: "https://github.com/rodrigocabezasz"
   LinkedIn: "https://www.linkedin.com/in/rodrigo-cabezas-zuñiga-698a8532"
