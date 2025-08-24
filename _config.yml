@@ -11,14 +11,28 @@ copyright_name: "Rodrigo Cabezas Zúñiga"
 email: "rorocabezas@gmail.com"
 locale: "es-ES"
 
-# Navegación principal
+
+# --- ESTRUCTURA DE URLS (PERMALINKS) ---
+# Esto asegura que las páginas se creen como /blog/ en lugar de /blog.html
+permalink: pretty
+
+# Enlaces de la Barra de Navegación (Header)
+# Asegúrate de que la indentación sea correcta (dos espacios por nivel)
 navbar-links:
-  CV: "/"
-  Blog: "/blog"
-  Categorías: "/categories"
-  Contacto: "/contact" 
-  GitHub: "https://github.com/rodrigocabezasz"
-  LinkedIn: "https://www.linkedin.com/in/rodrigo-cabezas-zuñiga-698a8532"
+  - title: Mi CV
+    url: /
+  - title: Blog
+    url: /blog/
+  - title: Categorías
+    url: /categories/
+  - title: Contacto
+    url: /contact/
+  - title: GitHub
+    url: https://github.com/rodrigocabezasz
+  - title: LinkedIn
+    url: https://www.linkedin.com/in/rodrigocabezasz/ # URL más limpia
+    #https://www.linkedin.com/in/rodrigo-cabezas-zuñiga-698a8532
+
 
 # --- Plugins y Paginación ---
 plugins:
@@ -28,3 +42,8 @@ plugins:
   
 paginate: 5 # Número de posts por página
 paginate_path: "/blog/page:num/"
+
+# Excluir archivos innecesarios del build final
+exclude:
+  - Gemfile
+  - Gemfile.lock

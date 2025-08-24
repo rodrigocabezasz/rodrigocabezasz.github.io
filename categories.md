@@ -2,6 +2,7 @@
 layout: page
 title: "Categorías"
 subtitle: "Explora los artículos por tema."
+permalink: /categories/
 ---
 
 <div id="archives">

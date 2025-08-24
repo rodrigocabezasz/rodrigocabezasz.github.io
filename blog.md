@@ -2,6 +2,7 @@
 layout: page
 title: Blog
 subtitle: "Aquí comparto reflexiones y aprendizajes sobre datos, tecnología y gestión."
+permalink: /blog/
 ---
 
 <div class="posts-list">

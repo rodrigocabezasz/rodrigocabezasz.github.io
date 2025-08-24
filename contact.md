@@ -2,6 +2,7 @@
 layout: page
 title: Contacto
 subtitle: "¡Hablemos! Estaré encantado de conectar contigo."
+permalink: /contact/
 ---
 
 <p>Si tienes alguna pregunta, una oportunidad de colaboración o simplemente quieres saludar, no dudes en rellenar el siguiente formulario. También puedes encontrarme en <a href="https://www.linkedin.com/in/rodrigocabezasz/">LinkedIn</a>.</p>
