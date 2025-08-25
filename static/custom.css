@@ -1,6 +1,10 @@
 /* Solución específica para el bloque de contacto */
 .header-contacto {
-    margin-top: 80px !important;
+    margin-top: 120px !important;
+}
+
+h1.page-title, h1.title {
+    padding-bottom: 18px !important;
 }
 
 /* Foto real en el menú izquierdo (sidebar) sobre el subtítulo */
