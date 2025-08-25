@@ -1,3 +1,7 @@
+/* Solución: margen superior para que los bloques no tapen el título */
+.header-profesional, .header-contacto {
+    margin-top: 60px !important;
+}
 /* Sombra elegante para la imagen de perfil en el sidebar */
 .avatar {
     box-shadow: 0 4px 16px rgba(0,0,0,0.25);
