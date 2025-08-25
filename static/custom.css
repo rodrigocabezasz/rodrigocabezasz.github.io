@@ -1,3 +1,19 @@
+/* Solución específica para el bloque de contacto */
+.header-contacto {
+    margin-top: 80px !important;
+}
+
+/* Foto real en el menú izquierdo (sidebar) sobre el subtítulo */
+.sidebar .avatar {
+    display: block;
+    margin: 0 auto 12px auto;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.18);
+    object-fit: cover;
+}
 /* Solución: margen superior para que los bloques no tapen el título */
 .header-profesional, .header-contacto {
     margin-top: 60px !important;
