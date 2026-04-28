@@ -308,6 +308,53 @@ footer.site-footer a {
   border-bottom: var(--nav-border);
 }
 
+/* ── Icono de búsqueda en nav ── */
+.search-icon-link {
+  display: inline-flex;
+  align-items: center;
+  color: var(--pico-color);
+  opacity: 0.7;
+  transition: opacity 0.15s, color 0.15s;
+}
+
+.search-icon-link:hover,
+.search-icon-link[aria-current="page"] {
+  opacity: 1;
+  color: var(--brand-accent);
+}
+
+/* ── Pagefind UI — overrides de tema ── */
+:root {
+  --pagefind-ui-scale: 0.9;
+  --pagefind-ui-primary: var(--brand-accent);
+  --pagefind-ui-text: var(--pico-color);
+  --pagefind-ui-background: var(--pico-background-color);
+  --pagefind-ui-border: var(--pico-muted-border-color);
+  --pagefind-ui-tag: var(--pico-code-background-color);
+  --pagefind-ui-border-width: 1px;
+  --pagefind-ui-border-radius: var(--pico-border-radius);
+  --pagefind-ui-font: var(--pico-font-family-sans-serif);
+}
+
+#search {
+  margin-top: 1.5rem;
+}
+
+.pagefind-ui__search-input {
+  background: var(--pico-form-element-background-color) !important;
+  color: var(--pico-color) !important;
+  border-color: var(--pico-muted-border-color) !important;
+}
+
+.pagefind-ui__result-title a {
+  color: var(--brand-accent) !important;
+}
+
+.pagefind-ui__result-excerpt mark {
+  background: color-mix(in srgb, var(--brand-accent) 20%, transparent);
+  color: inherit;
+}
+
 /* ── Utilidades ── */
 .text-muted {
   color: var(--pico-muted-color);

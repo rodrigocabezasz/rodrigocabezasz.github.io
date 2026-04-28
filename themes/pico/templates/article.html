@@ -4,7 +4,8 @@
 {% block description %}{{ article.summary | striptags | truncate(160) }}{% endblock %}
 
 {% block content %}
-<article class="article-full">
+<article class="article-full" data-pagefind-body
+          data-pagefind-meta="date:{{ article.date.strftime('%d %b %Y') }}">
 
   <header>
     <h1>{{ article.title }}</h1>

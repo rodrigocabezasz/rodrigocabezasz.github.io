@@ -51,6 +51,11 @@
   <!-- Estilos de marca -->
   <link rel="stylesheet" href="{{ SITEURL }}/theme/css/custom.css">
 
+  {% if page and page.slug == 'buscar' %}
+  <!-- Pagefind UI -->
+  <link rel="stylesheet" href="{{ SITEURL }}/pagefind/pagefind-ui.css">
+  {% endif %}
+
   {% block extra_head %}{% endblock %}
 
   {% if PLAUSIBLE_DOMAIN %}
@@ -60,7 +65,7 @@
 <body>
 
   <!-- ── Header ── -->
-  <header class="site-header">
+  <header class="site-header" data-pagefind-ignore>
     <nav class="container">
       <ul>
         <li>
@@ -68,20 +73,36 @@
         </li>
       </ul>
       <ul>
-        {# Páginas estáticas detectadas por Pelican #}
+        {# Páginas estáticas — excluye la página de búsqueda del loop normal #}
         {% for p in pages | sort(attribute='sortorder') %}
+        {% if p.slug != 'buscar' %}
         <li>
           <a href="{{ SITEURL }}/{{ p.url }}"
              {% if p == page %}aria-current="page"{% endif %}>
             {{ p.title }}
           </a>
         </li>
+        {% endif %}
         {% endfor %}
 
-        {# Items manuales de MENUITEMS (label, url) #}
+        {# Items manuales de MENUITEMS #}
         {% for label, url in MENUITEMS %}
         <li><a href="{{ url }}">{{ label }}</a></li>
         {% endfor %}
+
+        {# Icono de búsqueda #}
+        <li>
+          <a href="{{ SITEURL }}/buscar.html"
+             class="search-icon-link"
+             title="Buscar en el sitio"
+             {% if page and page.slug == 'buscar' %}aria-current="page"{% endif %}>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                 fill="none" stroke="currentColor" stroke-width="2.2"
+                 stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
+            </svg>
+          </a>
+        </li>
       </ul>
     </nav>
   </header>
@@ -92,7 +113,7 @@
   </main>
 
   <!-- ── Footer ── -->
-  <footer class="site-footer">
+  <footer class="site-footer" data-pagefind-ignore>
     <div class="container">
       <p>
         &copy; 2026 <a href="{{ SITEURL }}/">{{ AUTHOR }}</a> ·
@@ -104,6 +125,31 @@
       </p>
     </div>
   </footer>
+
+  {% if page and page.slug == 'buscar' %}
+  <script src="{{ SITEURL }}/pagefind/pagefind-ui.js"></script>
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      new PagefindUI({
+        element: "#search",
+        showSubResults: true,
+        translations: {
+          placeholder: "Buscar artículos y proyectos...",
+          zero_results: "Sin resultados para [SEARCH_TERM]",
+          many_results: "[COUNT] resultados para [SEARCH_TERM]",
+          one_result: "[COUNT] resultado para [SEARCH_TERM]",
+          searching: "Buscando [SEARCH_TERM]...",
+        }
+      });
+      // Pre-fill desde parámetro URL ?q=
+      const q = new URLSearchParams(window.location.search).get('q');
+      if (q) {
+        const input = document.querySelector('.pagefind-ui__search-input');
+        if (input) { input.value = q; input.dispatchEvent(new Event('input')); }
+      }
+    });
+  </script>
+  {% endif %}
 
 </body>
 </html>
