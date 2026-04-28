@@ -136,14 +136,38 @@ Sé específico con los títulos (incluye palabra clave SEO) y los outlines (3-4
 """
 
 
+MODELS = [
+    "gemini-2.5-flash",
+    "gemini-2.5-flash-lite",
+    "gemini-2.0-flash",
+    "gemini-2.0-flash-lite",
+]
+
+
 def call_gemini(prompt: str, api_key: str) -> str:
     client = genai.Client(api_key=api_key)
     print("⏳ Consultando Gemini...\n")
-    response = client.models.generate_content(
-        model="gemini-2.0-flash",
-        contents=prompt,
-    )
-    return response.text
+
+    last_error = None
+    for model in MODELS:
+        try:
+            response = client.models.generate_content(model=model, contents=prompt)
+            print(f"[modelo: {model}]\n")
+            return response.text
+        except Exception as e:
+            err_str = str(e)
+            if "429" in err_str or "RESOURCE_EXHAUSTED" in err_str:
+                print(f"  [{model}] cuota agotada, probando siguiente modelo...")
+                last_error = e
+                continue
+            raise  # otro error → propagar
+
+    # Todos los modelos agotados
+    print("\nERROR: Cuota agotada en todos los modelos.")
+    print("Probablemente el proyecto de tu API key tiene billing habilitado sin créditos.")
+    print("Solución: ve a https://aistudio.google.com/app/apikey y crea una key nueva")
+    print("  → elige 'Create API key in new project' para usar el free tier gratuito.")
+    raise last_error
 
 
 def ask_to_create_post(response_text: str) -> None:
