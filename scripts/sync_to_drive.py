@@ -1,4 +1,9 @@
 #!/usr/bin/env python3
+import sys
+if sys.platform == "win32":
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+    sys.stderr.reconfigure(encoding="utf-8", errors="replace")
+
 """
 Sube la carpeta brain/ a Google Drive para que NotebookLM la indexe.
 
@@ -52,12 +57,15 @@ SCOPES = ["https://www.googleapis.com/auth/drive.file"]
 def load_config() -> str:
     load_dotenv(ROOT / ".env")
     folder_id = os.getenv("DRIVE_FOLDER_ID", "").strip()
+    # Limpiar parámetros URL que se copian accidentalmente (ej: ?hl=es)
+    folder_id = folder_id.split("?")[0].split("&")[0].rstrip("/")
+
     if not folder_id:
         print("ERROR: DRIVE_FOLDER_ID no encontrado en .env")
         print()
         print("Para encontrar el ID de tu carpeta de Drive:")
         print("  1. Abre la carpeta '🧠 Cerebro Rodrigo' en drive.google.com")
-        print("  2. La URL será: drive.google.com/drive/folders/ABC123...")
+        print("  2. La URL sera: drive.google.com/drive/folders/ABC123...")
         print("  3. Copia ese ABC123... y ponlo en .env:")
         print("     DRIVE_FOLDER_ID=ABC123...")
         sys.exit(1)
