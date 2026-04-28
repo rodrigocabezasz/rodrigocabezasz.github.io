@@ -28,7 +28,7 @@ jobs:
           cache: "pip"
 
       - name: Install dependencies
-        run: pip install pelican markdown ghp-import
+        run: pip install -r requirements.txt
 
       - name: Build site
         run: pelican content -s publishconf.py
