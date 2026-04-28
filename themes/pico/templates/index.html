@@ -4,33 +4,54 @@
 
 {% block content %}
 
-  <!-- Hero -->
+  <!-- ── Hero ── -->
   <section class="hero">
-    <h1>{{ SITENAME }}</h1>
-    {% if SITESUBTITLE %}
-    <p class="subtitle">{{ SITESUBTITLE }}</p>
-    {% endif %}
-    <a href="{{ SITEURL }}/about.html" role="button" class="outline">Sobre mí</a>
+    <div class="hero__inner">
+      <img src="{{ SITEURL }}/images/perfil.jpg"
+           alt="{{ AUTHOR }}"
+           class="hero__avatar">
+      <div class="hero__content">
+        <h1 class="hero__title">Hola, soy {{ AUTHOR }}</h1>
+        {% if SITESUBTITLE %}
+        <p class="hero__subtitle">{{ SITESUBTITLE }}</p>
+        {% endif %}
+        <div class="hero__ctas">
+          <a href="{{ SITEURL }}/projects.html" role="button">Mi trabajo</a>
+          <a href="{{ SITEURL }}/about.html" role="button" class="outline">Sobre mí</a>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <!-- Listado de artículos -->
-  <section>
+  <!-- ── Artículos ── -->
+  <section class="articles-section">
     <p class="section-title">Últimas entradas</p>
 
     {% if articles_page.object_list %}
-    <div class="article-list">
+
       {% for article in articles_page.object_list %}
-      <div class="article-card">
-        <h2><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h2>
-        <p class="article-meta">
-          <time datetime="{{ article.date.isoformat() }}">{{ article.date.strftime('%d %b %Y') }}</time>
-          &nbsp;·&nbsp;
-          <a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a>
-        </p>
-        <p class="article-summary">{{ article.summary }}</p>
-      </div>
+      <article class="article-entry">
+        <h2>
+          <a class="article-title" href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a>
+        </h2>
+        <p class="article-entry__summary">{{ article.summary }}</p>
+        <div class="article-entry__footer">
+          <p class="article-meta">
+            {% if article.tags %}
+            Tags:
+            {% for tag in article.tags %}
+              <a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a>{% if not loop.last %}, {% endif %}
+            {% endfor %}
+            &nbsp;·&nbsp;
+            {% endif %}
+            <time datetime="{{ article.date.isoformat() }}">{{ article.date.strftime('%d %b %Y') }}</time>
+          </p>
+          <a class="btn" href="{{ SITEURL }}/{{ article.url }}">Seguir leyendo</a>
+        </div>
+      </article>
+      {% if not loop.last %}<hr class="article-divider">{% endif %}
       {% endfor %}
-    </div>
+
     {% else %}
     <p class="text-muted">Aún no hay entradas. ¡Vuelve pronto!</p>
     {% endif %}
@@ -46,6 +67,7 @@
       {% endif %}
     </nav>
     {% endif %}
+
   </section>
 
 {% endblock %}

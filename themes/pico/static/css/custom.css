@@ -81,18 +81,125 @@ footer.site-footer a {
   margin-bottom: 2.5rem;
 }
 
-.hero h1 {
-  font-size: clamp(1.8rem, 4vw, 2.6rem);
-  margin-bottom: 0.4rem;
+.hero__inner {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
 }
 
-.hero p.subtitle {
+.hero__avatar {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+  border: 3px solid var(--pico-muted-border-color);
+}
+
+.hero__content {
+  flex: 1;
+}
+
+.hero__title {
+  font-size: clamp(1.6rem, 4vw, 2.4rem);
+  margin-bottom: 0.3rem;
+}
+
+.hero__subtitle {
   color: var(--pico-muted-color);
-  font-size: 1.05rem;
+  font-size: 1rem;
   margin-bottom: 1.25rem;
 }
 
-/* ── Tarjetas de artículo ── */
+.hero__ctas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.hero__ctas a[role="button"] {
+  font-size: 0.9rem;
+  padding: 0.45rem 1.2rem;
+}
+
+@media (max-width: 480px) {
+  .hero__inner {
+    flex-direction: column;
+    text-align: center;
+  }
+  .hero__ctas {
+    justify-content: center;
+  }
+}
+
+/* ── Lista de artículos (estilo saurabheights) ── */
+.articles-section {
+  margin-top: 0.5rem;
+}
+
+.article-entry {
+  padding: 0.5rem 0 1.25rem;
+}
+
+.article-entry h2 {
+  font-size: 1.15rem;
+  margin-bottom: 0.3rem;
+}
+
+.article-title {
+  color: var(--pico-color);
+  text-decoration: none;
+  transition: color 0.15s;
+}
+
+.article-title:hover {
+  color: var(--brand-accent);
+}
+
+.article-entry__summary {
+  font-size: 0.93rem;
+  color: var(--pico-muted-color);
+  margin: 0.3rem 0 0.75rem;
+  line-height: 1.55;
+}
+
+.article-entry__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.article-entry__footer .article-meta {
+  margin: 0;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.3rem 1rem;
+  border: 1.5px solid var(--brand-accent);
+  border-radius: 999px;
+  color: var(--brand-accent);
+  font-size: 0.82rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.15s, color 0.15s;
+  white-space: nowrap;
+}
+
+.btn:hover {
+  background: var(--brand-accent);
+  color: #fff;
+}
+
+.article-divider {
+  border: none;
+  border-top: 1px solid var(--pico-muted-border-color);
+  margin: 0.25rem 0 1rem;
+}
+
+/* ── Tarjetas de artículo (legacy) ── */
 .article-list {
   display: flex;
   flex-direction: column;
