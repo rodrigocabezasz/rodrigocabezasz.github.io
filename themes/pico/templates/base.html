@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="{{ DEFAULT_LANG }}">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  {# ── Resolución de metadatos por tipo de página ── #}
+  {% if article %}
+    {% set _title       = article.title ~ ' — ' ~ SITENAME %}
+    {% set _description = article.summary | striptags | truncate(160) %}
+    {% set _url         = SITEURL ~ '/' ~ article.url %}
+    {% set _type        = 'article' %}
+  {% elif page %}
+    {% set _title       = page.title ~ ' — ' ~ SITENAME %}
+    {% set _description = page.title ~ ' — ' ~ SITENAME %}
+    {% set _url         = SITEURL ~ '/' ~ page.url %}
+    {% set _type        = 'website' %}
+  {% else %}
+    {% set _title       = SITENAME %}
+    {% set _description = SITENAME ~ ' — ' ~ SITESUBTITLE %}
+    {% set _url         = SITEURL ~ '/' %}
+    {% set _type        = 'website' %}
+  {% endif %}
+
+  <title>{% block title %}{{ _title }}{% endblock %}</title>
+  <meta name="description" content="{% block description %}{{ _description }}{% endblock %}">
+  <link rel="canonical" href="{{ _url }}">
+
+  <!-- Open Graph -->
+  <meta property="og:title"       content="{% block og_title %}{{ _title }}{% endblock %}">
+  <meta property="og:description" content="{{ _description }}">
+  <meta property="og:url"         content="{{ _url }}">
+  <meta property="og:type"        content="{{ _type }}">
+  <meta property="og:site_name"   content="{{ SITENAME }}">
+  <meta property="og:locale"      content="{{ DEFAULT_LANG }}">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card"        content="summary">
+  <meta name="twitter:title"       content="{{ _title }}">
+  <meta name="twitter:description" content="{{ _description }}">
+
+  <!-- RSS / Atom -->
+  {% if FEED_ALL_ATOM %}
+  <link rel="alternate" type="application/atom+xml"
+        title="{{ SITENAME }} Atom Feed"
+        href="{{ SITEURL }}/{{ FEED_ALL_ATOM }}">
+  {% endif %}
+
+  <!-- Pico.css v2 vía CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+  <!-- Estilos de marca -->
+  <link rel="stylesheet" href="{{ SITEURL }}/theme/css/custom.css">
+
+  {% block extra_head %}{% endblock %}
+
+  {% if PLAUSIBLE_DOMAIN %}
+  <script defer data-domain="{{ PLAUSIBLE_DOMAIN }}" src="https://plausible.io/js/script.js"></script>
+  {% endif %}
+</head>
+<body>
+
+  <!-- ── Header ── -->
+  <header class="site-header">
+    <nav class="container">
+      <ul>
+        <li>
+          <a href="{{ SITEURL }}/" class="site-title">{{ SITENAME }}</a>
+        </li>
+      </ul>
+      <ul>
+        {# Páginas estáticas detectadas por Pelican #}
+        {% for p in pages | sort(attribute='title') %}
+        <li>
+          <a href="{{ SITEURL }}/{{ p.url }}"
+             {% if p == page %}aria-current="page"{% endif %}>
+            {{ p.title }}
+          </a>
+        </li>
+        {% endfor %}
+
+        {# Items manuales de MENUITEMS (label, url) #}
+        {% for label, url in MENUITEMS %}
+        <li><a href="{{ url }}">{{ label }}</a></li>
+        {% endfor %}
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ── Contenido principal ── -->
+  <main class="container">
+    {% block content %}{% endblock %}
+  </main>
+
+  <!-- ── Footer ── -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>
+        &copy; 2026 <a href="{{ SITEURL }}/">{{ AUTHOR }}</a> ·
+        Hecho con <a href="https://getpelican.com" target="_blank" rel="noopener">Pelican</a>
+        &amp; <a href="https://picocss.com" target="_blank" rel="noopener">Pico.css</a>
+        {% if FEED_ALL_ATOM %}
+        · <a href="{{ SITEURL }}/{{ FEED_ALL_ATOM }}">Feed</a>
+        {% endif %}
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>

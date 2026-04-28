@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block title %}{{ article.title }} — {{ SITENAME }}{% endblock %}
+{% block description %}{{ article.summary | striptags | truncate(160) }}{% endblock %}
+
+{% block content %}
+<article class="article-full">
+
+  <header>
+    <h1>{{ article.title }}</h1>
+    <p class="article-meta">
+      <time datetime="{{ article.date.isoformat() }}">{{ article.date.strftime('%d %B %Y') }}</time>
+      &nbsp;·&nbsp;
+      <a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a>
+      {% if article.author %}
+      &nbsp;·&nbsp; {{ article.author }}
+      {% endif %}
+    </p>
+  </header>
+
+  <section>
+    {{ article.content }}
+  </section>
+
+  {% if article.tags %}
+  <div class="article-tags">
+    <span>Tags:</span>
+    {% for tag in article.tags %}
+    <a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a>
+    {% endfor %}
+  </div>
+  {% endif %}
+
+</article>
+{% endblock %}
