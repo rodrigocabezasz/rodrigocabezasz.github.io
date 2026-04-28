@@ -276,6 +276,33 @@ Status: published
     </div>
   </article>
 
+  <!-- Cerebro Perdurable -->
+  <article class="project-card-new" data-category="python automatizacion" data-priority="4">
+    <div class="project-card-new__body">
+      <div class="project-card-new__badges">
+        <span class="badge">IA Generativa</span>
+        <span class="badge">Automatización</span>
+      </div>
+      <h3 class="project-card-new__title">Sistema Cerebro Perdurable</h3>
+      <p class="project-card-new__description">Sistema PKM que conecta Google Drive, NotebookLM y Gemini API para generar ideas de posts con contexto real de proyectos y aprendizajes semanales.</p>
+      <ul class="project-card-new__features">
+        <li>Cerebro local en Markdown sincronizado con Google Drive</li>
+        <li>Script <code>gemini_ask.py</code>: 4 modos (semanal, serie, evergreen, trimestral)</li>
+        <li>Cierre del ciclo: post publicado → cerebro → nuevas sugerencias</li>
+        <li>30 min/semana de mantenimiento, efecto compuesto creciente</li>
+      </ul>
+      <div class="project-card-new__tech">
+        <img src="https://skillicons.dev/icons?i=py&theme=light" alt="Python" title="Python">
+        <span class="tech-text">Gemini API</span>
+        <span class="tech-text">NotebookLM</span>
+        <span class="tech-text">Drive API</span>
+      </div>
+      <div style="margin-top:.75rem;">
+        <a href="./cerebro-perdurable-notebooklm-gemini.html" class="project-link">Post del blog</a>
+      </div>
+    </div>
+  </article>
+
   <!-- Agregador RSS -->
   <article class="project-card-new" data-category="python fastapi automatizacion" data-priority="2">
     <div class="project-card-new__body">
