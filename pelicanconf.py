@@ -1,7 +1,7 @@
-AUTHOR = 'Rodrigo Cabezas'
+AUTHOR = 'Rodrigo Cabezas Zúñiga'
 SITENAME = 'Rodrigo Cabezas Z.'
 SITEURL = 'https://rodrigocabezasz.github.io'
-SITESUBTITLE = 'Desarrollador · Analista · Creador'
+SITESUBTITLE = 'Ingeniero en Control de Gestión &amp; Data Scientist'
 
 PATH = 'content'
 TIMEZONE = 'America/Santiago'

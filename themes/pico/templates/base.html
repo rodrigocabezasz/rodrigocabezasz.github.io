@@ -69,7 +69,7 @@
       </ul>
       <ul>
         {# Páginas estáticas detectadas por Pelican #}
-        {% for p in pages | sort(attribute='title') %}
+        {% for p in pages | sort(attribute='sortorder') %}
         <li>
           <a href="{{ SITEURL }}/{{ p.url }}"
              {% if p == page %}aria-current="page"{% endif %}>
