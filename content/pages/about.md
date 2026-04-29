@@ -19,7 +19,7 @@ Status: published
 
 Ingeniero en Control de Gestión con más de **15 años de experiencia** liderando planificación estratégica y optimización de procesos. Mi enfoque combina el análisis avanzado de datos con el desarrollo de software para transformar datos crudos en decisiones de negocio accionables.
 
-Actualmente trabajo como **Gerente de Planificación y Control de Gestión** en JIS Parking, donde diseño dashboards en Power BI, gestiono presupuestos anuales y desarrollo herramientas internas con Python y FastAPI. En paralelo colaboro como **Data Scientist** en Liliapp (Startup Chile), construyendo plataformas ETL y sistemas de autenticación con Firebase.
+Actualmente trabajo como **Gerente de Planificación y Control de Gestión** en JIS Parking, donde diseño dashboards con Streamlit, gestiono presupuestos anuales y desarrollo herramientas internas con Python y FastAPI. En paralelo colaboro como **Data Scientist** en Liliapp (Startup Chile), construyendo plataformas ETL y sistemas de autenticación con Firebase.
 
 ## Lo que hago
 

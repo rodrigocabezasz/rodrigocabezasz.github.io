@@ -11,7 +11,7 @@ Este post documenta cómo construí un sistema para resolver exactamente ese pro
 
 ## El problema: conocimiento que se evapora
 
-Trabajo con Python, FastAPI, Power BI y MySQL en proyectos reales. Cada semana hay aprendizajes: un patrón que funciona bien, un error que me costó horas, una decisión de arquitectura que resultó ser correcta. El problema es que ese conocimiento vive disperso en mi cabeza, en comentarios de código, en mensajes de Slack.
+Trabajo con Python, FastAPI, Streamlit y MySQL en proyectos reales. Cada semana hay aprendizajes: un patrón que funciona bien, un error que me costó horas, una decisión de arquitectura que resultó ser correcta. El problema es que ese conocimiento vive disperso en mi cabeza, en comentarios de código, en tarjetas de Trello.
 
 Cuando intento escribir un post, empiezo desde cero: ¿de qué escribo? ¿esto ya lo cubrí? ¿tengo suficiente material?
 
