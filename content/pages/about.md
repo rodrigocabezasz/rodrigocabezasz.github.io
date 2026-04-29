@@ -24,8 +24,8 @@ Actualmente trabajo como **Gerente de Planificación y Control de Gestión** en 
 ## Lo que hago
 
 - **Control de Gestión:** Planificación presupuestaria, KPIs, reporting ejecutivo, análisis de desviaciones.
-- **Data Science:** Python (Pandas, Scikit-learn), Power BI, SQL, modelamiento predictivo.
-- **Desarrollo:** FastAPI, Streamlit, Docker, GitHub Actions, APIs REST.
+- **Data Science:** Python (Pandas, Scikit-learn), Streamlit, Power BI, SQL, modelamiento predictivo.
+- **Desarrollo:** FastAPI + Streamlit (patrón backend/frontend), Docker, GitHub Actions, APIs REST.
 - **BI:** Power BI, Power Pivot, cubos OLAP/MOLAP, SAP BW/BO.
 
 ## Formación
